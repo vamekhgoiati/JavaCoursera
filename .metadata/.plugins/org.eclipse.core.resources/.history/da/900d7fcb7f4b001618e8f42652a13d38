@@ -1,0 +1,27 @@
+package guimodule;
+
+import processing.core.PApplet;
+
+public class MyDisplay extends PApplet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	public void setup() {
+		size(400, 400);
+		background(200, 200, 200);
+	}
+
+	@Override
+	public void draw() {
+		fill(255, 255, 0);
+		ellipse(200, 200, 390, 390);
+		fill(0, 0, 0);
+		ellipse(120, 150, 50, 75);
+		ellipse(280, 150, 50, 75);
+		arc(200, 350, 210, 50, 0, PI, CHORD);
+	}
+}
